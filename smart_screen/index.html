@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Capture and Analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Screen Capture and Analysis</h1>
+
+    <input type="text" id="command" placeholder="Enter your command" />
+    <button onclick="captureScreen()">Capture and Analyze</button>
+
+    <div id="status"></div>
+    <div id="result">
+      <h2>Analysis</h2>
+      <p id="analysis-text">Waiting...</p>
+      <img id="screenshot-img" style="max-width: 400px; display: none" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
