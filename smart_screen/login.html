@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Screen Capture and Analysis</title>
+  <link rel="stylesheet" href="auth-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h1><i class="fas fa-camera"></i> Screen Capture</h1>
+        <p>Login to your account</p>
+      </div>
+      
+      <div class="auth-form">
+        <div class="input-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+          <span class="error-message" id="email-error"></span>
+        </div>
+        
+        <div class="input-group">
+          <label for="password"><i class="fas fa-lock"></i> Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+          <span class="error-message" id="password-error"></span>
+        </div>
+        
+        <div class="remember-forgot">
+          <div class="remember">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+        
+        <button id="login-btn" class="auth-btn">Login</button>
+        
+        <div class="auth-footer">
+          <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="auth.js"></script>
+</body>
+</html>

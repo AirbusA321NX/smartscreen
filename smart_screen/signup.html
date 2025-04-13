@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Screen Capture and Analysis</title>
+  <link rel="stylesheet" href="auth-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h1><i class="fas fa-camera"></i> Screen Capture</h1>
+        <p>Create a new account</p>
+      </div>
+      
+      <div class="auth-form">
+        <div class="input-group">
+          <label for="name"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name">
+          <span class="error-message" id="name-error"></span>
+        </div>
+        
+        <div class="input-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+          <span class="error-message" id="email-error"></span>
+        </div>
+        
+        <div class="input-group">
+          <label for="password"><i class="fas fa-lock"></i> Password</label>
+          <input type="password" id="password" placeholder="Create a password">
+          <span class="error-message" id="password-error"></span>
+        </div>
+        
+        <div class="input-group">
+          <label for="confirm-password"><i class="fas fa-lock"></i> Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm your password">
+          <span class="error-message" id="confirm-password-error"></span>
+        </div>
+        
+        <div class="terms">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+        
+        <button id="signup-btn" class="auth-btn">Create Account</button>
+        
+        <div class="auth-footer">
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="auth.js"></script>
+</body>
+</html>
