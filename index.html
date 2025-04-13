@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Capture and Analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f4f4f4;
+        transition: background 0.5s ease;
+      }
+
+      h1 {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 300px;
+        margin-right: 10px;
+        transition: box-shadow 0.3s ease;
+      }
+
+      input[type="text"]:focus {
+        box-shadow: 0 0 5px #999;
+      }
+
+      button {
+        padding: 10px 20px;
+        background: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #2980b9;
+      }
+
+      #result {
+        margin-top: 20px;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 1s;
+      }
+
+      #analysis-text {
+        white-space: pre-line;
+        line-height: 1.5;
+      }
+
+      #status {
+        margin-top: 10px;
+        font-style: italic;
+        animation: pulse 1s infinite ease-in-out;
+        color: #666;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Screen Capture and Analysis</h1>
+
+    <input type="text" id="command" placeholder="Enter your command" />
+    <button onclick="captureScreen()">Capture and Analyze</button>
+
+    <div id="status">Idle</div>
+    <div id="result">
+      <h2>Analysis</h2>
+      <p id="analysis-text">Waiting...</p>
+      <img id="screenshot-img" style="max-width: 400px; display: none" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
